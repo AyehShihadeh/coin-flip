@@ -1,0 +1,66 @@
+html, body{
+  height: auto;
+  width: 100%;
+  margin:0;
+  padding:0;
+  scroll-behavior: smooth;
+  background-color: darkred;
+  color: gold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.title{
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  margin: 50px 10px;
+}
+
+.flip-button, .reset-button{
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px 25px;
+  border-radius: 30px;
+  border-color: goldenrod;
+}
+
+.flip-button:hover, .reset-button:hover{
+  background-color: goldenrod;
+  border-color: gold;
+}
+
+.head-button, .tail-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gold;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.head-button:hover, .tail-button:hover{
+  background-color: goldenrod;
+  border-color: gold;
+}
+
+.guess-container{
+  display: flex;
+  align-items: center;
+}
+
+.result-img{
+  background-color: gold;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+

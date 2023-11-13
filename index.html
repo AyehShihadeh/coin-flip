@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <h2 class="title">COIN FLIP GAME</h2>
+    <div class="flip-coin-head" style="display:flex; align-items:center;">
+      <button class="flip-button" onclick="
+      flipCoin();
+      ">FLIP</button>
+      <p class="js-result"></p>
+
+    </div>
+
+
+    <div class="guess-container">
+      <p class="guess-title">Guess:</p>
+
+      <button class="head-button" onclick="
+      compare('heads', result);
+      result=''; //clear result
+      guess='';
+      "><img src="IMAGES/heads.png" alt=""></button>
+
+      <button class="tail-button" onclick="
+      compare('tails', result);
+      result=''; //clear result
+      "><img src="IMAGES/tails.png" alt=""></button>
+    </div>
+
+
+
+    <br>
+    <br>
+
+    <p class="js-message2"></p>
+    <p class="js-message1"></p>
+    <p class="js-message3"></p>
+
+    <div class="score" style="display: flex; align-items: center;">
+      <p class="js-wins">Wins:</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <p class="js-losses">Losses:</p>
+    </div>
+
+
+    <button class="reset-button" onclick="
+      score.losses=0;
+      score.wins=0;
+      localStorage.removeItem('scoreString'); //removes score from local storage
+      updateScore();
+      clearWords();
+      alert('score has been reset');
+    ">RESET</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
